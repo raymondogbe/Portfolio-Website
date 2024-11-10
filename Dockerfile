@@ -8,7 +8,7 @@ COPY package*.json ./
 # Install only production dependencies
 RUN npm ci --production
 
-# Copy the rest of the application code
+# Copy the rest of the application code from one folder to another
 COPY . .
 
 # Build the app
